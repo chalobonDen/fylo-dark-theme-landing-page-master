@@ -3,13 +3,13 @@ import logo from '../images/logo.svg';
 import illustrationintro from '../images/illustration-intro.png';
 const Header = () => {
   return (
-    <>
+    <header>
       <div className="menu">
         <img src={logo} alt="" />
         <div>
-          <a href="">Features</a>
-          <a href="">Team</a>
-          <a href="">Sign In</a>
+          <a href="#features">Features</a>
+          <a href="#team">Team</a>
+          <a href="#signin">Sign In</a>
         </div>
       </div>
       <div className="header-detail">
@@ -24,7 +24,7 @@ const Header = () => {
           <button>Get Started</button>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 
