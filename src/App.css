@@ -13,7 +13,10 @@ body {
   background-repeat: no-repeat;
   background-position: 0 75%;
   color: #fff;
-  margin: 4rem;
+  /* margin: 4rem; */
+}
+.logo {
+  width: 140px;
 }
 a {
   color: #fff;
@@ -57,6 +60,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* background: hsl(218, 28%, 13%); */
 }
 .content > div {
   width: 40vw;
@@ -71,6 +75,41 @@ p {
 }
 h2 {
   font-size: 18px;
+}
+footer {
+  background: hsl(216, 53%, 9%);
+  height: 400px;
+  padding: 8rem 7rem;
+}
+section img {
+  height: 20px;
+  margin-right: 2rem;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.location {
+  width: 350px;
+  display: flex;
+}
+.contact div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+.social > svg {
+  width: 33px;
+  height: 33px;
+  padding: 7px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin-left: 6px;
+}
+.aboutus > p,
+.contactus > p {
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1440px) {
