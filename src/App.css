@@ -11,24 +11,30 @@ body {
   background: hsl(217, 28%, 15%);
   background-image: url('./images/bg-curvy-desktop.svg');
   background-repeat: no-repeat;
-  background-position: 0 75%;
+  background-position: 0 22%;
   color: #fff;
   /* margin: 4rem; */
 }
 .logo {
   width: 140px;
 }
-a {
-  color: #fff;
-  text-decoration: none;
+h1 {
+  font-size: 32px;
+  font-family: 'Raleway', sans-serif;
 }
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5rem;
 }
 .menu a {
   margin-left: 3rem;
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  padding-bottom: 4.5rem;
 }
 .header-detail {
   display: flex;
@@ -39,10 +45,6 @@ a {
 }
 .description-header {
   width: 480px;
-}
-.description-header h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
 }
 .description-header p {
   margin: 2rem 0 1rem;
@@ -60,12 +62,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background: hsl(218, 28%, 13%); */
+  background: hsl(218, 28%, 13%);
 }
 .content > div {
   width: 40vw;
   text-align: center;
   margin: 2rem 0;
+  padding: 0 8rem;
 }
 .content img {
   height: 64px;
@@ -111,9 +114,65 @@ section {
 .contactus > p {
   margin-bottom: 1rem;
 }
+.card-footer {
+  background: hsl(219, 30%, 18%);
+}
+.productive {
+  background: hsl(218, 28%, 13%);
+  display: flex;
+  justify-content: center;
+  padding: 8rem 7rem;
+  align-items: center;
+}
+.productive h1 {
+  width: 300px;
+  margin-bottom: 1.5rem;
+}
+.productive p {
+  margin-bottom: 1rem;
+}
+.productive a {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.productive a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 
-@media screen and (min-width: 1440px) {
-  .content > div {
-    padding: 0 8rem;
-  }
+.review {
+  background: hsl(218, 28%, 13%);
+  background-image: url('./images/bg-quotes.png');
+  background-repeat: no-repeat;
+  background-position: 7.2% 19%;
+  display: flex;
+  padding: 8rem 7rem;
+}
+.review > div {
+  background: hsl(219, 30%, 18%);
+  margin: 0 1rem;
+  padding: 3rem 2rem;
+}
+.profile {
+  display: flex;
+  margin-top: 2rem;
+}
+.profile > img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile > div > h3 {
+  font-size: 12px;
+}
+.profile > div > p {
+  font-size: 10px;
 }
