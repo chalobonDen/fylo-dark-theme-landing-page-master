@@ -212,3 +212,170 @@ section {
 .profile > div > p {
   font-size: 10px;
 }
+
+@media screen and (max-width: 414px) {
+  body {
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-position: center;
+    background-size: 1px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+
+  .menu {
+    padding: 1rem;
+    /* justify-content: center; */
+  }
+  .logo {
+    width: 70px;
+  }
+  .menu a {
+    margin-left: 1rem;
+  }
+  .description-header {
+    width: 300px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content > div {
+    width: 250px;
+
+    margin: 2rem;
+    padding: 0rem;
+  }
+  .content img {
+    height: 64px;
+  }
+  .header-detail > img,
+  .productive > img {
+    width: 300px;
+  }
+
+  .productive {
+    flex-direction: column;
+    padding: 6rem 2rem 0;
+  }
+
+  .productive > div {
+    width: 300px;
+    margin: 3rem;
+    padding: 0rem;
+    text-align: center;
+  }
+  .productive h1 {
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .review {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding: 6rem 0;
+    background-position: 11.2% 7.5%;
+    background-size: 2rem;
+  }
+
+  .review > div {
+    width: 300px;
+
+    background: hsl(219, 30%, 18%);
+    margin: 0 1rem;
+    padding: 3rem 2rem;
+  }
+  .profile {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .profile > img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    margin-right: 1rem;
+  }
+  .profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile > div > h3 {
+    font-size: 12px;
+  }
+  .profile > div > p {
+    font-size: 10px;
+  }
+
+  footer > .logo {
+    width: 120px;
+  }
+  section img {
+    height: 15px;
+    margin-right: 1.2rem;
+  }
+  footer {
+    height: 600px;
+    width: 100vw;
+    padding: 4rem;
+  }
+  .footer {
+    position: relative;
+  }
+  .contact > div {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  section {
+    flex-direction: column;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  section p {
+    width: 250px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutus {
+    padding: 2rem 0;
+  }
+
+  /* Card Footer Component */
+  .card-footer {
+    display: none;
+    padding: 2rem;
+    width: 300px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-footer h2 {
+    font-size: 23px;
+  }
+  .card-footer p {
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+  .input-btn {
+    width: 244px;
+  }
+  .card-footer h2 {
+    font-size: 16px;
+  }
+  .card-footer input,
+  .card-footer button {
+    margin: 1rem 0 0.2rem;
+    width: 100%;
+    height: 35px;
+  }
+  .card-footer button {
+    font-size: 12px;
+  }
+}
