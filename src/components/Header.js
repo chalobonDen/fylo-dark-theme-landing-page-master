@@ -21,7 +21,9 @@ const Header = () => {
             Access them wherever you need, share and collaborate with friends
             family, and co-workers.
           </p>
-          <button>Get Started</button>
+          <div>
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
     </header>
