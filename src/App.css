@@ -236,9 +236,12 @@ section {
   .description-header {
     width: 100vw;
   }
+  .description-header h1 {
+    padding: 0 2rem;
+  }
   .description-header p {
     margin: 0;
-    padding: 2rem 0 1rem;
+    padding: 1rem 2rem;
     background: hsl(218, 28%, 13%);
   }
   .description-header > div {
