@@ -15,7 +15,7 @@ const Footer = () => {
           be happy to help you.
         </p>
         <div className="input-btn">
-          <input type="text" name="" id="" />
+          <input type="text" placeholder="email@example.com" />
           <button>Get Started For Free</button>
         </div>
       </div>

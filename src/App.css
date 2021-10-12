@@ -212,6 +212,13 @@ section {
 .profile > div > p {
   font-size: 10px;
 }
+.input-btn > input {
+  padding-left: 1rem;
+}
+.input-btn > input::placeholder {
+  color: #c2c2c2;
+  font-size: 8px;
+}
 
 @media screen and (max-width: 414px) {
   body {
