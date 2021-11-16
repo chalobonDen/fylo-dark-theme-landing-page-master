@@ -11,7 +11,7 @@ const Review = () => {
             <div className="profile">
               <img src={item.image} alt="" />
               <div>
-                <h3>{item.name}</h3>
+                <h1>{item.name}</h1>
                 <p>{item.position}</p>
               </div>
             </div>

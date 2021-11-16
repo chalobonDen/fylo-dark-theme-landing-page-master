@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo.svg';
 import location from '../images/icon-location.svg';
 import phone from '../images/icon-phone.svg';
-import email from '../images/icon-email.svg';
+import emailPic from '../images/icon-email.svg';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const onHandleInput = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const onClickInput = () => {
+    if (!email) {
+      setError('Please fill out this field');
+    } else if (
+      !email.includes('@') ||
+      !email.includes('.') ||
+      !email.includes('co')
+    ) {
+      setError('Please enter a valid email address');
+    } else {
+      setEmail('');
+      setError('');
+    }
+  };
+
   return (
     <div className="footer">
       <div className="card-footer">
@@ -15,8 +37,14 @@ const Footer = () => {
           be happy to help you.
         </p>
         <div className="input-btn">
-          <input type="text" placeholder="email@example.com" />
-          <button>Get Started For Free</button>
+          <input
+            value={email}
+            onChange={onHandleInput}
+            type="text"
+            placeholder="email@example.com"
+          />
+          <button onClick={onClickInput}>Get Started For Free</button>
+          <p>{error}</p>
         </div>
       </div>
       <footer>
@@ -35,7 +63,7 @@ const Footer = () => {
               <p>+1-543-123-4567</p>
             </div>
             <div>
-              <img src={email} alt="" />
+              <img src={emailPic} alt="" />
               <p>example@fylo.com</p>
             </div>
           </div>
